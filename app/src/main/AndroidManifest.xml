@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.william.speechpad" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MenuInicial"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Categoria"
+            android:label="@string/title_activity_categoria"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".CategoriaPorVoz"
+            android:label="@string/title_activity_categoria_por_voz" >
+        </activity>
+        <activity
+            android:name=".Configuracao"
+            android:label="@string/title_activity_configuracao"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".DataPorVoz"
+            android:label="@string/title_activity_data_por_voz" >
+        </activity>
+        <activity
+            android:name=".EditarLembrete"
+            android:label="@string/title_activity_editar_lembrete"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".HoraPorVoz"
+            android:label="@string/title_activity_hora_por_voz" >
+        </activity>
+        <activity
+            android:name=".Lembrete"
+            android:label="@string/title_activity_lembrete"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".LembretePorVoz"
+            android:label="@string/title_activity_lembrete_por_voz" >
+        </activity>
+        <activity
+            android:name=".PrioridadePorVoz"
+            android:label="@string/title_activity_prioridade_por_voz" >
+        </activity>
+        <activity
+            android:name=".SalvarPorTexto"
+            android:label="@string/title_activity_salvar_por_texto"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".VisualizarLembrete"
+            android:label="@string/title_activity_visualizar_lembrete"
+            android:noHistory="true" >
+        </activity>
+
+        <service android:name=".ScheduleService" />
+        <service android:name=".NotifyService" />
+
+        <activity
+            android:name=".OuvirLembretes"
+            android:label="@string/title_activity_ouvir_lembretes" >
+        </activity>
+        <activity
+            android:name=".ListarLembretes"
+            android:label="@string/title_activity_listar_lembretes" >
+        </activity>
+        <activity
+            android:name=".LembretePorVozReduzido"
+            android:label="@string/title_activity_lembrete_por_voz_reduzido" >
+        </activity>
+    </application>
+
+</manifest>

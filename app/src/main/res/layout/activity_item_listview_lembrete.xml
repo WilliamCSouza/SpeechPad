@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.william.speechpad_v0.item_ListViewLembrete"
+    android:configChanges="orientation|screenSize"
+    android:orientation="vertical"
+    android:id="@+id/item_ListViewLembrete"
+    android:backgroundTintMode="multiply"
+    android:elevation="@dimen/abc_panel_menu_list_width"
+    android:focusableInTouchMode="false"
+    style="@android:style/Theme.Panel"
+    android:focusable="false"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="@dimen/abc_text_size_display_4_material"
+        android:layout_height="25dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Categoria"
+        android:id="@+id/txtNomeCategoriaLembrete"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="#455A64"
+        android:textStyle="bold|normal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtHoraLembrete" />
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Data"
+        android:id="@+id/txtDataLembrete"
+        android:layout_gravity="right"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#37474f"
+        android:layout_marginLeft="24dp"
+        android:layout_above="@+id/btnExcluirLembrete"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hora"
+        android:id="@+id/txtHoraLembrete"
+        android:textColor="#37474f"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginStart="-3dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Lembrete"
+        android:scrollHorizontally="true"
+        android:id="@+id/txtConteudoLembrete"
+        android:textColor="#37474f"
+        android:elegantTextHeight="false"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_below="@+id/btnExcluirLembrete"
+        android:layout_alignEnd="@+id/btnExcluirLembrete"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Prioridade"
+        android:id="@+id/txtPrioridadeLembrete"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:textColor="#37474f"
+        android:layout_below="@+id/space"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnVisualizarLembrete"
+        android:src="@drawable/ic_action_description"
+        android:focusableInTouchMode="false"
+        android:background="?attr/selectableItemBackground"
+        android:tintMode="src_in"
+        android:tint="@color/ColorImageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/abc_action_bar_default_height_material" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_toStartOf="@+id/btnVisualizarLembrete"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/btnVisualizarLembrete"
+        android:id="@+id/space" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnEditarLembrete"
+        android:src="@drawable/ic_action_edit"
+        android:background="?attr/selectableItemBackground"
+        android:focusableInTouchMode="false"
+        android:tintMode="src_in"
+        android:backgroundTintMode="multiply"
+        android:tint="@color/ColorImageButton"
+        android:elevation="@dimen/abc_action_bar_default_height_material"
+        android:layout_below="@+id/btnVisualizarLembrete"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView2"
+        android:layout_gravity="right"
+        android:textColor="#37474f"
+        android:layout_marginRight="15dp"
+        android:text="Dia"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/txtDataLembrete"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="às"
+        android:id="@+id/textView3"
+        android:textColor="#37474f"
+        android:layout_alignBaseline="@+id/txtDataLembrete"
+        android:layout_alignBottom="@+id/txtDataLembrete"
+        android:layout_toEndOf="@+id/txtDataLembrete"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Lembrete"
+        android:id="@+id/textView8"
+        android:textColor="#37474f"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:layout_above="@+id/txtConteudoLembrete"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnExcluirLembrete"
+        android:background="?attr/selectableItemBackground"
+        android:backgroundTintMode="multiply"
+        android:elevation="@dimen/abc_action_bar_default_height_material"
+        android:tint="@color/ColorImageButton"
+        android:tintMode="src_in"
+        android:layout_below="@+id/btnEditarLembrete"
+        android:layout_alignStart="@+id/btnEditarLembrete"
+        android:src="@drawable/ic_action_delete" />
+
+</RelativeLayout>

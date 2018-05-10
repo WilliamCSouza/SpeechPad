@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#009688</color>
+    <color name="ColorPrimaryDark">#008375</color>
+    <color name="ColorImageButton">#009688</color>
+    <color name="BotaoPressionado">#013a39</color>
+    <color name="Botao_texto_desabilitado">#40000000</color>
+    <color name="BotaoNormal">#008375</color>
+    <color name="tabSrollColor">#009688</color>
+</resources>

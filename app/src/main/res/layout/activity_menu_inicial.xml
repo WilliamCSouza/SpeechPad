@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MenuInicial"
+    android:id="@+id/menuInicial"
+    android:longClickable="false"
+    android:background="#ffffff">
+
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Lembrete \nPor Texto"
+        android:id="@+id/btnTexto"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:typeface="sans"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lblQuantidadeLembreteMenu"
+        android:layout_alignParentStart="true"
+        android:backgroundTintMode="src_over"
+        style="@android:style/TextAppearance.Material.Widget.Button"
+        android:elevation="@dimen/abc_action_button_min_width_overflow_material"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Lembrete\nPor Voz"
+        android:id="@+id/btnVoz"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTintMode="multiply"
+        android:layout_alignTop="@+id/btnTexto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        style="@android:style/TextAppearance.Material.Widget.Button"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Visualizar Lembretes"
+        android:id="@+id/btnLembrete"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTintMode="multiply"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnTexto"
+        android:layout_alignStart="@+id/btnTexto"
+        style="@android:style/TextAppearance.Material.Widget.Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Bom dia, William!"
+        android:id="@+id/lblBoasVindas"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#455A64"
+        style="@style/Base.TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Você possui x lembretes agendados para hoje"
+        android:id="@+id/lblQuantidadeLembreteMenu"
+        android:layout_below="@+id/lblBoasVindas"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Escutar\nLembretes"
+        android:id="@+id/btnOuvirLembretes"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTintMode="multiply"
+        android:layout_alignTop="@+id/btnLembrete"
+        android:layout_alignStart="@+id/btnVoz"
+        style="@android:style/TextAppearance.Material.Widget.Button" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Visualizar Categorias"
+        android:id="@+id/btnVisualizarCategoria"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTintMode="multiply"
+        android:layout_alignTop="@+id/btnConfiguracao"
+        android:layout_alignStart="@+id/btnLembrete"
+        style="@android:style/TextAppearance.Material.Widget.Button"
+        android:typeface="sans" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:text="Configuração"
+        android:id="@+id/btnConfiguracao"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:enabled="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:backgroundTintMode="multiply"
+        android:layout_below="@+id/btnOuvirLembretes"
+        android:layout_alignStart="@+id/btnOuvirLembretes"
+        android:layout_marginTop="10dp"
+        style="@android:style/TextAppearance.Material.Widget.Button" />
+
+</RelativeLayout>

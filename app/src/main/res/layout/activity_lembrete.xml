@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.william.speechpad_v0.Categoria"
+    android:id="@+id/lembrete"
+    android:background="#ffffff"
+    android:backgroundTintMode="multiply"
+    android:elevation="@dimen/abc_panel_menu_list_width">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar Lembrete"
+        android:id="@+id/btnCriarLembrete"
+        android:background="@drawable/botao_flat"
+        android:textColor="#ffffff"
+        android:textStyle="bold|normal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/listviewLembrete"
+        android:typeface="sans" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listviewLembrete"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/btnCriarLembrete"
+        android:background="#ffffff"
+        android:backgroundTintMode="multiply" />
+
+</RelativeLayout>

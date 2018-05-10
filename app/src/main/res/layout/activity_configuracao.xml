@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.william.speechpad_v0.Configuracao"
+    android:id="@+id/Configuracao"
+    android:elevation="@dimen/abc_panel_menu_list_width"
+    android:background="#ffffff"
+    android:backgroundTintMode="multiply">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:background="@drawable/botao_flat"
+        android:id="@+id/btnSalvarConfiguracao"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffffff"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como deseja ser chamado?"
+        android:id="@+id/lblNome"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:textSize="18dp"
+        android:textColor="#455a64"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/lblTextoConfig" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNomeUsuario"
+        android:textColor="#37474f"
+        android:maxLength="25"
+        android:layout_below="@+id/lblNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/lblNome" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lembrete Por Voz Reduzido   "
+        android:id="@+id/swithLembreteVoz"
+        android:checked="false"
+        android:textColor="#455A64"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtNomeUsuario"
+        android:layout_alignParentStart="true"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reduz a interação no Lembrete Por Voz, retirando a Categoria e Prioridade."
+        android:id="@+id/lblTextoConfig"
+        android:layout_below="@+id/swithLembreteVoz"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Fazendo isso, será necessário escolher uma categoria e uma prioridade para deixa-las pré-definida."
+        android:id="@+id/lblTextoConfig2"
+        android:layout_below="@+id/lblTextoConfig"
+        android:layout_alignEnd="@+id/lblTextoConfig"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Categoria"
+        android:id="@+id/lblCategoriaConfig"
+        android:layout_below="@+id/lblTextoConfig2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCategoriaConfig"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/lblCategoriaConfig" />
+
+    <Spinner
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spPrioridadeConfig"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/spCategoriaConfig"
+        android:layout_toEndOf="@+id/swithLembreteVoz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Prioridade"
+        android:id="@+id/lblPrioridadeConfig"
+        android:layout_alignTop="@+id/lblCategoriaConfig"
+        android:layout_alignStart="@+id/spPrioridadeConfig" />
+</RelativeLayout>

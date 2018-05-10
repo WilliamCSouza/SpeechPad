@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.william.speechpad_v0.VisualizarLembrete"
+    android:id="@+id/visualizarLembrete"
+    android:backgroundTintMode="multiply"
+    android:focusable="false"
+    android:background="#ffffff"
+    android:elevation="@dimen/abc_panel_menu_list_width">
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Carregando"
+        android:id="@+id/lblCategoriaVisualizacao"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Carregando"
+        android:id="@+id/lblPrioridadeVisualizacao"
+        android:textSize="16dp"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Carregando"
+        android:id="@+id/lblLembreteVisualizacao"
+        android:textSize="16dp"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/lblData" />
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:id="@+id/btnEditarLembreteVisualizacao"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/botao_flat"
+        android:textColor="#fff4f4f4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="Data"
+        android:id="@+id/lblData"
+        android:textSize="16dp"
+        android:textStyle="bold|normal"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginLeft="52dp" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="Hora"
+        android:id="@+id/lblHora"
+        android:textStyle="bold|normal"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginLeft="200dp" />
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/btnVoltar"
+        android:background="@drawable/botao_flat"
+        android:textColor="#fff4f4f4"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:id="@+id/btnExcluirLembreteVisualizacao"
+        android:background="@drawable/botao_flat"
+        android:textColor="#fff4f4f4"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Categoria do Lembrete"
+        android:id="@+id/textView"
+        android:textColor="#455A64"
+        android:textSize="22dp"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Prioridade do Lembrete"
+        android:id="@+id/textView4"
+        android:textColor="#455A64"
+        android:textSize="22dp"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/lblCategoriaVisualizacao"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Data e Hora do Lembrete"
+        android:id="@+id/textView5"
+        android:textColor="#455A64"
+        android:textSize="22dp"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/lblPrioridadeVisualizacao"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="às"
+        android:id="@+id/textView6"
+        android:textStyle="bold|normal"
+        android:textSize="16dp"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="-3dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="165dp" />
+
+    <TextView
+        android:textIsSelectable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline"
+        android:text="Lembrete Salvo"
+        android:id="@+id/textView7"
+        android:textColor="#455A64"
+        android:textSize="22dp"
+        android:textStyle="bold|normal"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/lblData"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
